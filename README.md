@@ -1,5 +1,9 @@
 # Statements Demo
 
+**[Demo direkt im Browser öffnen](https://statements-demo-kd-a6f9.mistyfinch37.chatgpt.site)**
+
+Die gehostete Demo ist über diesen Link öffentlich erreichbar und lässt sich ohne ZIP-Download öffnen.
+
 Die klickbare HTML-Demo liegt direkt in dieser Datei:
 
 **[Demo direkt als ZIP herunterladen](https://github.com/kidigitalmanager-dotcom/ChatGPT/archive/refs/heads/main.zip)**
