@@ -8,7 +8,7 @@ Die klickbare HTML-Demo liegt direkt in dieser Datei:
 
 ZIP herunterladen und entpacken. Anschließend die enthaltene `Statements Demo.html` per Doppelklick im Browser öffnen. Die einzelne HTML-Datei lässt sich alternativ auf GitHub über **Download raw file** (Pfeil nach unten) speichern. Eine Installation oder Internetverbindung ist dafür nicht erforderlich.
 
-Die Demo enthält 61 Monate von Oktober 2021 bis Oktober 2026. Der Bruttoumsatz beginnt bei **10.000 $ pro Monat**, steigt auf **420.000 $ pro Monat** und ergibt insgesamt genau **3.642.057 $**. Davon stammen **742.057 $ aus Abos** und **2.900.000 $ aus Chatting / PPV Messages**. Alle anderen Umsatzkategorien stehen auf 0 $. Das Ranking oben links zeigt **Top 0,1 % der Creator**. Nettowerte berücksichtigen eine angenommene Plattformgebühr von 20 %.
+Die Demo enthält 61 Monate von Oktober 2021 bis Oktober 2026. Der Bruttoumsatz beginnt bei **10.000 $ pro Monat**, steigt auf **420.000 $ pro Monat** und ergibt insgesamt genau **3.642.057 $**. Davon stammen **742.057 $ aus Abos**, **200.000 $ aus Tips** und **2.700.000 $ aus Chatting / PPV Messages**. Tips machen in jedem Monat und in jedem auswählbaren Zeitraum etwa **3–8 %** der Umsätze aus. Posts und Referrals stehen auf 0 $. Das Ranking oben links zeigt **Top 0,1 % der Creator**. Nettowerte berücksichtigen eine angenommene Plattformgebühr von 20 %.
 
 Bis einschließlich August 2025 liegen die Monatsumsätze zwischen **10.000 und 18.500 $**. Im **September 2025 springen sie auf 65.000 $**, im **Oktober 2025 auf 110.000 $** und steigen danach bis auf **420.000 $** im Oktober 2026. Die Kurven zeigen den deutlichen Sprung im September 2025.
 
@@ -18,6 +18,8 @@ Der Graph zeigt monatliche Umsätze je Quelle: Abos in Blau, PPV Messages in hel
 
 Alle Zahlen und Aktionen sind für die interne Präsentation simuliert. Zahlungen und Nachrichten werden nicht an externe Dienste gesendet; Änderungen an der Demo bleiben im lokalen Browserspeicher.
 
-Die Gestaltung orientiert sich an den bereitgestellten Statistik- und Chatvorlagen. Die Oberfläche skaliert zusammenhängend mit Fensterbreite und Ansicht. Roboto in den echten Schriftstärken 400, 500 und 700, die nachgezeichneten SVG-Symbole und die Daten sind vollständig eingebettet.
+Die Gestaltung orientiert sich an den bereitgestellten Statistik- und Chatvorlagen. Die Oberfläche skaliert zusammenhängend mit Fensterbreite und Ansicht. Roboto in den echten Schriftstärken 400, 500 und 700, die eingebetteten SVG-Konturen der Seitenleiste und die Daten sind vollständig eingebettet.
 
 Die Nachrichtenansicht enthält acht fiktive Kontakte mit auswählbaren Unterhaltungen, Postfachfiltern, Suche, Übersetzung, Reaktionen, Galerie, Schnellantworten und einem Nachrichteneditor. Nachrichten, PPV-Preise, Dateinamen-Anhänge und geplante Nachrichten werden nur lokal simuliert. Chatänderungen bleiben im Browserspeicher und lassen sich über die Demo-Einstellungen zurücksetzen.
+
+Während die Nachrichtenansicht geöffnet und der Browser-Tab sichtbar ist, treffen alle **3–16 Sekunden** zufällig neue fiktive Nachrichten in wechselnden Unterhaltungen ein. Die Zeitstempel werden beim Öffnen an der aktuellen **Berliner Uhrzeit (Europe/Berlin) im AM/PM-Format** ausgerichtet. Sommer- und Winterzeit werden automatisch berücksichtigt. Entwürfe und die Leseposition bleiben beim Nachrichteneingang erhalten; ungelesene Chats erhalten einen Zähler. Beim Wechsel zu einer anderen Ansicht pausiert die Simulation.
