@@ -22,7 +22,7 @@ Der Graph zeigt monatliche Umsätze je Quelle: Abos in Blau, PPV Messages in hel
 
 Alle Zahlen und Aktionen sind für die interne Präsentation simuliert. Zahlungen und Nachrichten werden nicht an externe Dienste gesendet; Änderungen an der Demo bleiben im lokalen Browserspeicher.
 
-Die Gestaltung orientiert sich an den bereitgestellten Statistik- und Chatvorlagen. Die Oberfläche skaliert zusammenhängend mit Fensterbreite und Ansicht. Roboto in den echten Schriftstärken 400, 500 und 700, die eingebetteten SVG-Konturen der Seitenleiste und die Daten sind vollständig eingebettet.
+Die Gestaltung orientiert sich an den bereitgestellten Statistik- und Chatvorlagen. Die Oberfläche verwendet feste CSS-Größen für Schrift, Symbole und Zeilenhöhen. Breite Desktopfenster vergrößern die Seite nicht mehr automatisch. Der Rahmen ist begrenzt und zentriert; die Balance- und Statistikspalten behalten ihre aus den Vorlagen abgeleiteten Verhältnisse. Schmale Fenster wechseln in die mobile Anordnung. Roboto in den echten Schriftstärken 400, 500 und 700, die eingebetteten SVG-Konturen der Seitenleiste und die Daten sind vollständig eingebettet.
 
 Die Nachrichtenansicht enthält acht fiktive Kontakte mit auswählbaren Unterhaltungen, Postfachfiltern, Suche, Übersetzung, Reaktionen, Galerie, Schnellantworten und einem Nachrichteneditor. Nachrichten, PPV-Preise, Dateinamen-Anhänge und geplante Nachrichten werden nur lokal simuliert. Chatänderungen bleiben im Browserspeicher und lassen sich über die Demo-Einstellungen zurücksetzen.
 
