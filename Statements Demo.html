@@ -53,6 +53,11 @@ html{overflow:hidden}body{padding:0;background:#fff;overflow:hidden}:root{--ink:
 /* Original filled outlines retain their optical sizes inside the 32-unit source grid. */
 .rail-link svg.rail-glyph{width:28px;height:28px;fill:currentColor;stroke:none;stroke-width:0}
 
+/* Keep native CSS dimensions as the desktop window widens. */
+.shell{max-width:1280px;margin-inline:auto}
+.fans-mode .shell{max-width:960px}
+@media(min-width:901px){#fans-root{max-width:892.8px;flex:1 1 892.8px}}
+
 </style>
 <script type="text/plain" id="roboto-license">
 Roboto font: Copyright 2011 Google Inc. All Rights Reserved.
@@ -353,7 +358,7 @@ function toast(message){clearTimeout(toastTimer);$('#toast').textContent=message
 function modal(title,html){closeDateMenu(false);lastFocus=document.activeElement;$('#dialog-title').textContent=title;$('#dialog-body').innerHTML=html;$('#modal').hidden=false;setTimeout(()=>$('.dialog input,.dialog select,.dialog textarea,.dialog .close')?.focus(),0)}
 function closeModal(){$('#modal').hidden=true;lastFocus?.focus()}
 function uiScale(){return Number(document.body.dataset.uiScale)||1}
-function fitCanvas(){const base=(document.body.classList.contains('chat-mode')||document.body.classList.contains('fans-mode'))?960:936,scale=innerWidth>=1000?innerWidth/base:1;document.body.dataset.uiScale=String(scale);document.body.style.zoom=String(scale);document.body.style.width=`${innerWidth/scale}px`;document.body.style.height=`${innerHeight/scale}px`}
+function fitCanvas(){document.body.dataset.uiScale='1';document.body.style.removeProperty('zoom');document.body.style.removeProperty('width');document.body.style.removeProperty('height')}
 function activeBounds(){let from=state.from,to=state.to;if(state.year!=='all'){from=from>`${state.year}-01-01`?from:`${state.year}-01-01`;to=to<`${state.year}-12-31`?to:`${state.year}-12-31`}return {from,to}}
 function selectedMonths(){const {from,to}=activeBounds();return DATA.months.filter(m=>m.id>=from.slice(0,7)&&m.id<=to.slice(0,7)).map(m=>{const all=dailyRecords(m),days=all.filter(d=>d.iso>=from&&d.iso<=to);if(!days.length)return null;if(days.length===all.length)return m;const categories=Object.fromEntries(CATEGORIES.map(([k])=>[k,{gross:days.reduce((n,d)=>n+d.categories[k].gross,0),net:days.reduce((n,d)=>n+d.categories[k].net,0)}]));return {...m,categories,gross:days.reduce((n,d)=>n+d.gross,0),net:days.reduce((n,d)=>n+d.net,0),_days:days}}).filter(Boolean)}
 function selectedMonth(id){return selectedMonths().find(m=>m.id===id)}
